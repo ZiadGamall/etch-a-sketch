@@ -24,6 +24,11 @@ body {
 .row {
     flex: 1 ;
     height: 30px;
+    width: 30px;
     border: 1px solid black;
     
+}
+
+.henge {
+    background-color: black;
 }

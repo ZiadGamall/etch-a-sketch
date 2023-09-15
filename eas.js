@@ -13,3 +13,13 @@ for (let j = 1; j < 17; j++) {
     } 
     container.appendChild(column)
 }
+
+const cells = document.querySelectorAll('.row');
+
+cells.forEach(cell => {cell.addEventListener('mouseover', () => changeColor(cell))})
+
+function changeColor (e) {
+    e.classList.add('henge')
+}
+
+
