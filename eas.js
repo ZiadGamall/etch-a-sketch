@@ -19,7 +19,13 @@ const cells = document.querySelectorAll('.row');
 cells.forEach(cell => {cell.addEventListener('mouseover', () => changeColor(cell))})
 
 function changeColor (e) {
-    e.classList.add('henge')
+    e.classList.add('dark')
 }
 
+const reset = document.getElementById('reset')
 
+reset.addEventListener('click', () => {removeClass(cells)})
+
+function removeClass (cells) {
+    cells.forEach(cell => cell.classList.remove('dark'))
+}
